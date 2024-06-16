@@ -57,7 +57,7 @@ const load = () => {
     x = Math.floor(21.5 * h2); //calculation for suggested weight
 
     f = parseFloat(((1.20 * t) + (0.23 * age)) - 10.8).toFixed(2); // calculation for body fat
-    fat.innerText = f + "%"; //display body fat
+    fat.innerText = "~" + f + "%"; //display body fat
 
     //below if..else is for color line.
     if (t < 18.5) {
@@ -66,7 +66,8 @@ const load = () => {
         roll.style.color = "black";
         roll.style.left = "0";
 
-        sugg.innerText = "~"+ x + "Kg"; // display suggested weight
+
+        sugg.innerText = "~" + x + "Kg"; // display suggested weight
     } else if (t > 18.5 && t < 24.9) {
         roll.innerText = "Normal";
         roll.style.backgroundColor = "green";
@@ -79,13 +80,13 @@ const load = () => {
         roll.style.backgroundColor = "orange";
         roll.style.left = "8.3rem";
 
-         sugg.innerText = "~"+ x + "Kg"; // display suggested weight
+        sugg.innerText = "~" + x + "Kg";
     } else {
         roll.innerText = "Obesity";
         roll.style.backgroundColor = "red";
         roll.style.color = "white";
         roll.style.left = "15rem";
-         sugg.innerText = "~"+ x + "Kg"; // display suggested weight
+        sugg.innerText = "~" + x + "Kg";
     }
 
 }
