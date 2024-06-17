@@ -74,7 +74,7 @@ const load = () => {
         roll.style.color = "white";
         roll.style.left = "3.8rem";
 
-        sugg.innerText = "--";
+         sugg.innerText = " " + " " + "--";
     } else if (t > 25.0 && t < 29.9) {
         roll.innerText = "Overweight";
         roll.style.backgroundColor = "orange";
